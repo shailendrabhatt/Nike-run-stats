@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "ff1ff0c2-03db-45bf-94f5-f473f47a2495",
+		"name": "Nike+",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2567673"
+	},
+	"item": [
+		{
+			"name": "Nike Fetch activities",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nike.com/plus/v3/activities/before_id/v3/*?limit=30&types=run%2Cjogging&include_deleted=false",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nike",
+						"com"
+					],
+					"path": [
+						"plus",
+						"v3",
+						"activities",
+						"before_id",
+						"v3",
+						"*"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "30"
+						},
+						{
+							"key": "types",
+							"value": "run%2Cjogging"
+						},
+						{
+							"key": "include_deleted",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
